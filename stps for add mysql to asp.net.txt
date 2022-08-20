@@ -1,0 +1,22 @@
+Steps:
+
+Add Connection String  :
+Server=localhost;Database=proyectocrud;Uid=root;Pwd=root
+
+Packages to install :
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+
+(NO ES NECESARIO HACERLO CON LA POWERSHELL)
+
+Install & Update dotnet EF tool :
+dotnet tool install --global dotnet-ef (SI NO LO TENES)
+dotnet tool update --global dotnet-ef (Y SI YA LO TENES)
+
+Scaffold MySQL Database :
+dotnet ef dbcontext scaffold Name=ProyectoCrudDB Pomelo.EntityFrameworkCore.MySql --output-dir Models --context-dir Data --namespace ProyectoCrud.Models --context-namespace ProyectoCrud.Data --context ProyectoCrudContext -f --no-onconfiguring
+
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+
+(Esto es con powershell y te lo deja ordenado)
+(El ultimo paquete sirve para serializar jsons o deserializarlos pero se puede usar la libreria de System.Text.Json)
