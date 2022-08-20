@@ -24,3 +24,12 @@ C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\Proyec
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\obj\Debug\net6.0\ProyectoCrud.pdb
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\obj\Debug\net6.0\ProyectoCrud.genruntimeconfig.cache
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\obj\Debug\net6.0\ref\ProyectoCrud.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\obj\Debug\net6.0\ProyectoCrud.csproj.CopyComplete
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
