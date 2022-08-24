@@ -18,7 +18,7 @@ namespace ProyectoCrud.Data
         }
 
         public virtual DbSet<Cliente> Clientes { get; set; } = null!;
-        public virtual DbSet<Detalleventum> Detalleventa { get; set; } = null!;
+        public virtual DbSet<Detalleventa> Detalleventa { get; set; } = null!;
         public virtual DbSet<Producto> Productos { get; set; } = null!;
         public virtual DbSet<Venta> Ventas { get; set; } = null!;
 
@@ -45,7 +45,7 @@ namespace ProyectoCrud.Data
                 entity.Property(e => e.Telefono).HasMaxLength(12);
             });
 
-            modelBuilder.Entity<Detalleventum>(entity =>
+            modelBuilder.Entity<Detalleventa>(entity =>
             {
                 entity.ToTable("detalleventa");
 

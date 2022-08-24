@@ -33,3 +33,7 @@ C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\Proyec
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\obj\Debug\net6.0\ProyectoCrud.csproj.CopyComplete
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Adm\Desktop\ProyectosMaxi\ProyectoCrud\ProyectoCrud\ProyectoCrud\ProyectoCrud\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

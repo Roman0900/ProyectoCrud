@@ -1,0 +1,30 @@
+﻿@model List<Producto>
+
+    <h1> Productos por Nombres</h1>
+
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th>Nombre</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var Producto in Model){
+
+
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(m=>Producto.Nombre)
+                    </td>
+
+                </tr>
+
+            }
+
+
+        </tbody>
+
+    </table>

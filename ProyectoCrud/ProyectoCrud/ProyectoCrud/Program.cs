@@ -1,7 +1,20 @@
+using ProyectoCrud.Data;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql;
+using Microsoft.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<ProyectoCrudContext>(options =>
+{
+    var connetionString = builder.Configuration.GetConnectionString("ProyectoCrudDB");
+    options.UseMySql(connetionString, ServerVersion.AutoDetect(connetionString));
+
+});
+
 
 var app = builder.Build();
 

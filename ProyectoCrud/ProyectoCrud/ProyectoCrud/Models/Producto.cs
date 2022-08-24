@@ -7,7 +7,7 @@ namespace ProyectoCrud.Models
     {
         public Producto()
         {
-            Detalleventa = new HashSet<Detalleventum>();
+            Detalleventa = new HashSet<Detalleventa>();
         }
 
         public int Id { get; set; }
@@ -15,6 +15,6 @@ namespace ProyectoCrud.Models
         public decimal? Precio { get; set; }
         public string? Categoria { get; set; }
 
-        public virtual ICollection<Detalleventum> Detalleventa { get; set; }
+        public virtual ICollection<Detalleventa> Detalleventa { get; set; }
     }
 }
