@@ -1,0 +1,63 @@
+﻿@using ProyectoCrud.Models.ViewModels
+@model ProductoViewModel
+
+    <section class="gradient-custom">
+        <div class="container py-5 h-auto">
+            <div class="row d-flex justify-content-center align-items-center h-auto">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-dark text-white" style="border-radius: 2rem;">
+                        <div class="card-body p-5 text-center">
+
+                        <div class="mb-md-3 mt-md-3 pb-4">
+                            
+                            <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+
+                                <h2 class="fw-bold mb-2 text-uppercase">crear producto</h2>
+                                <p class="text-white-50 mb-5">Ingrese los datos del nuevo producto</p>
+
+                                <div class="form-outline form-white mb-2">
+                                    <input asp-for="Nombre" class="form-control form-control-lg" />
+                                    <label asp-for="Nombre" class="control-label">Nombre del Producto</label>
+                                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline form-white mb-2">
+
+                                    <input asp-for="Precio" class="form-control form-control-lg" />
+                                    <label asp-for="Precio" class="control-label">Precio</label>
+                                    <span asp-validation-for="Precio" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-outline form-white mb-2">
+                                    <input asp-for="Categoria" class="form-control form-control-lg" />
+                                    <label asp-for="Categoria" class="control-label">Categoria</label>
+                                    <span asp-validation-for="Categoria" class="text-danger"></span>
+                                </div>
+
+                                <p class="px-5"></p>
+                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Crear</button>
+
+                            </form>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    @section Scripts{
+
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+

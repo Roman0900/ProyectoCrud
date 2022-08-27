@@ -1,0 +1,67 @@
+﻿@model List<Producto>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData</title>
+</head>
+
+<body>
+
+    <h2 class="text-bg-dark text-center py-3">Listar Productos </h2>
+
+    <table class="table table-dark table-striped text-center">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var Producto in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(p=>Producto.Nombre)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(p=>Producto.Precio)$
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(p=>Producto.Categoria)
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-danger">Borrar</button>
+                    </td>
+                </tr>
+                
+            }
+           
+
+
+        </tbody>
+
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+</body>
+</html>
+    

@@ -1,30 +1,61 @@
-﻿@model List<Producto>
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+</head>
+<body>
+    <div class="row row-cols-2 row-cols-m-3  row-cols-lg-4">
 
-    <h1> Productos por Nombres</h1>
+        <div class="col">
+    <div class="card my-4 text-center border-4 border-dark" style="width: 15rem; background-color:wheat;">
+                <img src="~/css/C.png" class="card-img-top rounded img-fluid my-1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Agregar Producto</h5>
+            <p class="card-text">Una forma rapida de agregar un producto.</p>
+            <a asp-controller="Producto" asp-action="Create" class="btn btn-primary">Vamos alla...</a>
+        </div>
+    </div>
+    </div>
 
-    <table class="table">
-        <thead>
+        <div class="col">
+    <div class="card my-4 text-center border-4 border-dark" style="width: 15rem; background-color:wheat;">
+                <img src="~/css/R.png" class="card-img-top rounded img-fluid my-1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Listar Productos</h5>
+            <p class="card-text">Listar todos los productos.</p>
+                    <a asp-controller="Producto" asp-action="List" class="btn btn-primary">Vamos alla...</a>
+        </div>
+    </div>
+        </div>
 
-            <tr>
-                <th>Nombre</th>
-            </tr>
+        <div class="col">
+    <div class="card my-4 text-center border-4 border-dark" style="width: 15rem; background-color:wheat;">
+                <img src="~/css/u.png" class="card-img-top rounded img-fluid my-1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Actualizar Productos</h5>
+            <p class="card-text">Actualizar un producto.</p>
+                    <a href="#" class="btn btn-primary">Vamos alla...</a>
+        </div>
+    </div>
+    </div>
 
-        </thead>
-        <tbody>
-            @foreach (var Producto in Model){
+        <div class="col">
+    <div class="card my-4 text-center border-4 border-dark" style="width: 15rem; background-color:wheat;">
+                <img src="~/css/D.png" class="card-img-top rounded img-fluid my-1" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Eliminar Producto</h5>
+            <p class="card-text">Eliminar un producto de forma permanente.</p>
+                    <a href="#" class="btn btn-primary">Vamos alla...</a>
+        </div>
+    </div>
+        </div>
+    </div>
 
 
-                <tr>
-
-                    <td>
-                        @Html.DisplayFor(m=>Producto.Nombre)
-                    </td>
-
-                </tr>
-
-            }
 
 
-        </tbody>
-
-    </table>
+</body>
+</html>
