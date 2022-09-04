@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ProyectoCrud.Data;
+using ProyectoCrud.Interfaces;
 using ProyectoCrud.Models;
 using ProyectoCrud.Models.ViewModels;
 
@@ -9,32 +10,35 @@ namespace ProyectoCrud.Controllers
 {
     public class ProductoController : Controller
     {
-        private readonly ProyectoCrudContext _context;
+        private readonly IProductoRepository _productoRepository;
 
-
-        public ProductoController(ProyectoCrudContext context)
+        public ProductoController(IProductoRepository ProductoRepository)
         {
-            _context = context;
+            _productoRepository = ProductoRepository;
         }
 
+        ///Vistas
 
         public IActionResult Index()
         {
             return View();
         }
 
-
-
-        public async Task<IActionResult> List()
-        {
-            return View(await _context.Productos.ToListAsync());
-        }
-
-
         public IActionResult Create()
         {
             return View();
         }
+
+
+        ///Funciones
+
+        public async Task<IActionResult> List()
+        {
+            return View(await _productoRepository.GetAll());
+        }
+
+
+      
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -44,18 +48,15 @@ namespace ProyectoCrud.Controllers
             {
                 var producto = new Producto()
                 {
-                    Id = _context.Productos.Max(x => x.Id) + 1,
+                    Id = _productoRepository.MaxID() + 1,
                     Nombre = model.Nombre,
                     Precio = model.Precio,
                     Categoria = model.Categoria
                 };
 
-                _context.Productos.Add(producto);
-                await _context.SaveChangesAsync();
+              var a =  await _productoRepository.Add(producto);
+
                 return RedirectToAction("List");
-
-
-
             }
             
             return View(model);
